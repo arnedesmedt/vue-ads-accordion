@@ -57,7 +57,9 @@ export default {
                 return;
             }
 
-            this.tabs = [clickedTab.identifier];
+            this.tabs = [
+                clickedTab.identifier,
+            ];
         },
 
         activeTabsChanged () {

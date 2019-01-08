@@ -44,7 +44,7 @@ export default {
         name: {
             type: String,
             default: '',
-        }
+        },
     },
 
     data () {
@@ -71,7 +71,7 @@ export default {
 
         tabClasses () {
             return {};
-        }
+        },
     },
 
     methods: {
