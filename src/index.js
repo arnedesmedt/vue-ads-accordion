@@ -1,9 +1,9 @@
 import './assets/css/tailwind.css';
 
-import VueAdsAccordian from './components/Accordion';
-import VueAdsAccordianTab from './components/AccordionTab';
+import VueAdsAccordion from './components/Accordion';
+import VueAdsAccordionTab from './components/AccordionTab';
 
 export {
-    VueAdsAccordian,
-    VueAdsAccordianTab,
+    VueAdsAccordion,
+    VueAdsAccordionTab,
 };
