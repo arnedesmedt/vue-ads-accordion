@@ -1,28 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app" class="vue-ads-bg-grey-lighter vue-ads-p-4">
+        <div class="vue-ads-bg-white vue-ads-shadow vue-ads-p-4">
+            <vue-ads-accordion :other-close="true" :active-tabs="['Test 2']">
+                <vue-ads-accordion-tab title="Test">
+                    Dit is een testje
+                </vue-ads-accordion-tab>
+                <vue-ads-accordion-tab title="Test 2">
+                    Dit is een testje 2
+                </vue-ads-accordion-tab>
+                <vue-ads-accordion-tab title="Test 3">
+                    Dit is een testje 3
+                </vue-ads-accordion-tab>
+            </vue-ads-accordion>
+        </div>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import './assets/css/tailwind.css';
+import VueAdsAccordion from './components/Accordion';
+import VueAdsAccordionTab from './components/AccordionTab';
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+    name: 'app',
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+    components: {
+        VueAdsAccordionTab,
+        VueAdsAccordion,
+    },
+};
+</script>
