@@ -20,11 +20,6 @@
         <div
             v-if="active"
             :class="contentClasses"
-            class="
-                vue-ads-text-sm
-                vue-ads-py-4
-                vue-ads-px-6
-            "
         >
             <slot/>
         </div>
