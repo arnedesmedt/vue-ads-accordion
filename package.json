@@ -12,7 +12,7 @@
     "bugs": {
         "url": "https://github.com/arnedesmedt/vue-ads-accordion/issues"
     },
-    "version": "0.0.3",
+    "version": "0.0.4",
     "main": "./dist/vue-ads-accordion.common.js",
     "files": [
         "/dist"
