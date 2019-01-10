@@ -45,13 +45,13 @@ export default {
 
     methods: {
         toggleActive (clickedTab) {
+            if (this.tabs.includes(clickedTab.identifier)) {
+                this.tabs.splice(this.tabs.indexOf(clickedTab.identifier), 1);
+
+                return;
+            }
+
             if (!this.otherClose) {
-                if (this.tabs.includes(clickedTab.identifier)) {
-                    this.tabs.splice(this.tabs.indexOf(clickedTab.identifier), 1);
-
-                    return;
-                }
-
                 this.tabs.push(clickedTab.identifier);
 
                 return;

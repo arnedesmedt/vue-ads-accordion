@@ -11,11 +11,18 @@
                 vue-ads-border-orange
                 vue-ads-bg-grey-lightest
                 vue-ads-text-grey-darker
+                vue-ads-flex
             "
             @click="clicked"
             :class="tabClasses"
         >
-            {{ title }}
+            <div class="vue-ads-flex-grow">
+                <i class="fa vue-ads-text-sm vue-ads-mr-2" :class="iconClasses"></i>
+                <slot name="title" :title="title">{{ title }}</slot>
+            </div>
+            <div>
+                <slot name="right" :title="title"></slot>
+            </div>
         </div>
         <div
             v-if="active"
@@ -66,6 +73,13 @@ export default {
 
         tabClasses () {
             return {};
+        },
+
+        iconClasses () {
+            return {
+                'fa-caret-right': !this.active,
+                'fa-caret-down': this.active,
+            };
         },
     },
 
