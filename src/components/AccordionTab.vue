@@ -43,9 +43,9 @@ export default {
             default: '',
         },
 
-        name: {
+        id: {
             type: String,
-            default: '',
+            required: false,
         },
     },
 
@@ -58,7 +58,7 @@ export default {
 
     computed: {
         identifier () {
-            return this.title || this.name;
+            return this.id || this.title;
         },
 
         containerClasses () {
